@@ -30,9 +30,9 @@ $password = $_POST['password'];
 $type = $_POST['type'];
 require 'Connection.php';
 
-$sql = "SELECT * FROM user WHERE uname = ? AND password = ? AND type = ?";
+$sql = "SELECT * FROM user WHERE uname = ? AND password = ?";
 $stmt = $con->prepare($sql);
-$stmt->bind_param("sss", $uname, $password, $type);
+$stmt->bind_param("ss", $uname, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 if ($result->num_rows > 0) {
