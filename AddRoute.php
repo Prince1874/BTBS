@@ -27,17 +27,19 @@
   </div>
 </li>
 
-<li><a href="#">Ticket<i class="fas fa-caret-down"></i></a>
+<li><a href="#">Route<i class="fas fa-caret-down"></i></a>
 
 <div class="dropdown-menu">
-<ul>
-<li><a href="TicketReport.php">Ticket Reort</a></li>
-<li>
-
-</ul>
-</div>
+    <ul>
+    
+      <li><a href="AddRoute.php">Add Route</a></li>
+      <li><a href="EditRoute.php">Edit Route</a></li>
+      <li><a href="RouteDetails.php">Route Details</a></li>
+      <li>
+        
+    </ul>
+  </div>
 </li>
-
 <li><a href="#">Bus<i class="fas fa-caret-down"></i></a>
 
 <div class="dropdown-menu">
