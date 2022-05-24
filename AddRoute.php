@@ -70,13 +70,30 @@
                    <div class="middle-column">
                         <label for="stationid" class="label-col1">Station Name</label>
                         <input type="text" name="sname" id="sname">
-                   </div>
+                        
+                     <script>
+                              function add_field()
+                              {
+                                  var total_text=document.getElementsByClassName("input_text");
+                                  total_text=total_text.length+1;
+                                  document.getElementById("field_div").innerHTML=document.getElementById("field_div").innerHTML+
+                                  "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"'><input type='button' value='remove' onclick=remove_field('input_text"+total_text+"');></p>";
+                              }
+                              function remove_field(id)
+                              {
+                                document.getElementById(id+"_wrapper").innerHTML="";
+                              }
+                    </script>
+                 
+                        <div id="wrapper">
+                          <div id="field_div">
+                          <input type="button" value="Add TextBox" onclick="add_field();">
+                          </div>
+                          </div>
+                </div>
                    
                     <div class="right-column">
-                    <label for="type" class="label-col1">Type</label>
-                    <select name="type" id="type" class="radio-span">
-                       <option value="up">UP</option>
-                       <option value="down">Down</option>
+                   
                    </select>
                     </div>
                 </form>

@@ -44,7 +44,7 @@
     
     .logo {
       color: var(--color-white);
-      font-size: 25px;
+      font-size: 18px;
     }
     
     .logo span {
@@ -211,3 +211,5 @@
   text-align: center;
   color: white;
 }
+
+
