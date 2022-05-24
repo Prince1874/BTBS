@@ -11,7 +11,7 @@
 <body>
 
 <div class="menu-bar">
-      <h1 class="logo"><span>Bus Ticket Booking System</span></h1>
+      <h1 class="logo"><span>BTBS</span></h1>
       <ul>
       
     <li><a href="#">Bus-Staff<i class="fas fa-caret-down"></i></a>
