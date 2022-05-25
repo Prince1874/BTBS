@@ -44,7 +44,7 @@
     
     .logo {
       color: var(--color-white);
-      font-size: 18px;
+      font-size: 17px;
     }
     
     .logo span {
@@ -69,9 +69,9 @@
     }
     
     .menu-bar ul li {
-      /* width: 120px; */
+      
       padding: 10px 30px;
-      /* text-align: center; */
+      
     
       position: relative;
     }
@@ -212,4 +212,17 @@
   color: white;
 }
 
+
+.lbtn {
+  
+  border: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  background:gray;
+}
+.font {
+  font-size: 10px;
+}
 

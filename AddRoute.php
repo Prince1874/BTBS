@@ -11,7 +11,7 @@
 <body>
 
 <div class="menu-bar">
-      <h1 class="logo"><span>Bus Ticket Booking System</span></h1>
+      <h1 class="logo"><span>BTBS</span></h1>
       <ul>
       
     <li><a href="#">Bus-Staff<i class="fas fa-caret-down"></i></a>
@@ -67,35 +67,32 @@
                         <button class="btn" type="reset">Reset</button>
                     </div>
 
+                    
                    <div class="middle-column">
                         <label for="stationid" class="label-col1">Station Name</label>
                         <input type="text" name="sname" id="sname">
                         
                      <script>
-                              function add_field()
+                              function add_textbox()
                               {
-                                  var total_text=document.getElementsByClassName("input_text");
-                                  total_text=total_text.length+1;
-                                  document.getElementById("field_div").innerHTML=document.getElementById("field_div").innerHTML+
-                                  "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"'><input type='button' value='remove' onclick=remove_field('input_text"+total_text+"');></p>";
+                                  var station=document.getElementsByClassName("get_text");
+                                  station=station.length+1;
+                                  document.getElementById("button").innerHTML=document.getElementById("button").innerHTML+
+                                  "<p id='get_text"+station+"_add'><input type='text' class='get_text ' id='get_text"+station+"'><input type='button' value='remove' onclick=remove_field('get_text"+station+"');></p>";
                               }
                               function remove_field(id)
                               {
-                                document.getElementById(id+"_wrapper").innerHTML="";
+                                document.getElementById(id+"_add").innerHTML="";
                               }
                     </script>
                  
-                        <div id="wrapper">
-                          <div id="field_div">
-                          <input type="button" value="Add TextBox" onclick="add_field();">
+                        <div id="add">
+                          <div id="button">
+                          <input type="button" value="Add TextBox" onclick="add_textbox();">
                           </div>
                           </div>
                 </div>
-                   
-                    <div class="right-column">
-                   
-                   </select>
-                    </div>
+
                 </form>
                 
             </div>

@@ -20,7 +20,7 @@
     <input type="password" id="password" placeholder="Enter Password" name="password" required >
     
     
-    <button type="submit" class="btn label-col1">Login</button> <br><br><br><br>
+    <button type="submit" class="btn label-col1">Login</button> 
    
     </div>
    
