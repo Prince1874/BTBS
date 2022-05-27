@@ -12,7 +12,11 @@
 
   .radio-span {
     border: 1px solid gray;
-    width: 172px;
+    width: 180px;
+  }
+
+  .label-col3 {
+    margin-left: 100px;
   }
 
   .label-col1 {
@@ -71,13 +75,12 @@
     .menu-bar ul li {
       
       padding: 10px 30px;
-      
-    
+     
       position: relative;
     }
     
     .menu-bar ul li a {
-      font-size: 18px;
+      font-size: 14px;
       color: var(--color-white);
       text-decoration: none;
     

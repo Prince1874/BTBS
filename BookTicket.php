@@ -26,58 +26,36 @@ $result = $con->query($sql);
 <body>
 
 <div class="menu-bar">
-      <h1 class="logo"><span>BTBS</span></h1>
-      <ul>
-        <li><a href="#">Customer<i class="fas fa-caret-down"></i></a>
-
-   <div class="dropdown-menu">
+    <h1 class="logo"><span>BTBS</span></h1>
     <ul>
-      <li><a href="NewCustomer.php">New Customer</a></li>
-      <li><a href="EditCustomer.php">Edit Customer</a></li>
-      <li><a href="CustomerList.php">Customer List</a></li> 
-    </ul>
-    </div>
+      <li><a href="#">Customer<i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="NewCustomer.php">New Customer</a></li>
+            <li><a href="EditCustomer.php">Edit Customer</a></li>
+            <li><a href="CustomerList.php">Customer List</a></li>
+            <li>
+
+          </ul>
+     
+
+      <li><a href="#">Ticket<i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="BookTicket.php">Book Ticket</a></li>
+            <li><a href="EditTicket.php">Edit Ticket</a></li>
+            <li><a href="TicketReport.php">Ticket Reort</a></li>
+            <li>
+
+          </ul>
+        </div>
+      </li>
+
+     
+  </div>
   </li>
-    <li><a href="#">Bus-Staff<i class="fas fa-caret-down"></i></a>
-
-<div class="dropdown-menu">
-    <ul>
-      <li><a href="Newstaff.php">New Staff</a></li>
-      <li><a href="Editstaff.php">Edit Staff</a></li>
-      <li><a href="StaffList.php">Staff List</a></li>
-      <li>
-        
-    </ul>
-  </div>
-</li>
-
-<li><a href="#">Ticket<i class="fas fa-caret-down"></i></a>
-
-<div class="dropdown-menu">
-<ul>
-<li><a href="BookTicket.php">Book Ticket</a></li>
-<li><a href="EditTicket.php">Edit Ticket</a></li>
-<li><a href="TicketReport.php">Ticket Reort</a></li>
-<li>
-
-</ul>
-</div>
-</li>
-
-<li><a href="#">Bus<i class="fas fa-caret-down"></i></a>
-
-<div class="dropdown-menu">
-<ul>
-<li><a href="NewBus.php">New Bus</a></li>
-<li><a href="EditBus.php">Edit Bus</a></li>
-<li><a href="BusList.php">Bus List</a></li>
-<li>
-
-</ul>
-</div>
-</li>
-  </div>
-</li>
     <div class="main-content"> <br><br>
        <h2 class="label-col2">Book Ticket</h2><br>
        <hr>
