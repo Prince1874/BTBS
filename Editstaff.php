@@ -22,7 +22,11 @@ if ($result->num_rows > 0) {
 }
 ?>
 
-
+<?php
+     session_start();
+     if(!isset($_SESSION['uname'])) 
+     header("Location:Login.php");
+?>
 
 
 

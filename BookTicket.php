@@ -1,15 +1,8 @@
 <?php
-
-
-$from = $_GET['from'];
-$to = $_GET['to'];
-$date = $_GET['date'];
-require 'Connection.php';
-$sql = "SELECT FROM bus WHERE arrival='$from', departure='$to', date='$date'";
-$result = $con->query($sql);
-
+     session_start();
+     if(!isset($_SESSION['uname'])) 
+     header("Location:Login.php");
 ?>
-
 
 
 
