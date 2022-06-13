@@ -58,6 +58,20 @@
 </ul>
 </div>
 </li>
+
+
+<li><a href="#">Bus Schedule<i class="fas fa-caret-down"></i></a>
+
+<div class="dropdown-menu">
+    <ul>
+      <li><a href="SetSchedule.php">Set Schedule</a></li>
+      <li><a href="EditSchedule.php">Edit Schedule</a></li>
+      <li><a href="ScheduleDetails.php">Schedule Details</a></li>
+      <li>
+        
+    </ul>
+  </div>
+</li>
   </div>
 </li>
     <div class="main-content"> <br><br>
@@ -74,32 +88,28 @@
                     </div>
 
                     
-                   <div class="middle-column">
+                   <div class="middle-column" id="station-details">
                         <label for="stationid" class="label-col1">Station Name</label>
                         <input type="text" name="sname" id="sname">
+                        <button type="submit" onclick="appendRow()">Add</button>
                         
                      <script>
-                              function add_textbox()
-                              {
-                                  var station=document.getElementsByClassName("get_text");
-                                  station=station.length+1;
-                                  document.getElementById("button").innerHTML=document.getElementById("button").innerHTML+
-                                  "<p id='get_text"+station+"_add'><input type='text' class='get_text ' id='get_text"+station+"'><input type='button' value='remove' onclick=remove_field('get_text"+station+"');></p>";
-                              }
-                              function remove_field(id)
-                              {
-                                document.getElementById(id+"_add").innerHTML="";
-                              }
-                    </script>
-                 
-                        <div id="add">
-                          <div id="button">
-                          <input type="button" value="Add TextBox" onclick="add_textbox();">
-                          </div>
-                          </div>
-                </div>
+                      function appendRow() {
+                      let tableRow = document.createElement("div");
+                      document.getElementById("station-details").appendChild(tableRow); 
+
+                      let stationName = document.createElement("label");
+                      tableRow.appendChild(stationName);
+                      let inputStationName = document.createElement("input");
+                      stationName.appendChild(inputStationName);
+                      }
+                      
+
+                     </script>
 
                 </form>
+
+                
                 
             </div>
         </div>

@@ -60,8 +60,26 @@
 </ul>
 </div>
 </li>
+  
+   
+<li><a href="#">Bus Schedule<i class="fas fa-caret-down"></i></a>
+
+<div class="dropdown-menu">
+    <ul>
+      <li><a href="SetSchedule.php">Set Schedule</a></li>
+      <li><a href="EditSchedule.php">Edit Schedule</a></li>
+      <li><a href="ScheduleDetails.php">Schedule Details</a></li>
+      <li>
+        
+    </ul>
   </div>
 </li>
+
+  </div>
+</li>
+
+   
+
     <div class="main-content"> <br>
        <h2 class="label-col2">Bus List</h2><br>
        <hr>

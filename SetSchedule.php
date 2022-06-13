@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
 <body>
 
 <div class="menu-bar">
-      <h1 class="logo"><span>BTBS/span></h1>
+      <h1 class="logo"><span>BTBS</span></h1>
       <ul>
         
     <li><a href="#">Bus-Staff<i class="fas fa-caret-down"></i></a>
@@ -97,11 +97,11 @@ if ($result->num_rows > 0) {
   </div>
 </li>
     <div class="main-content"> <br><br>
-       <h2 class="label-col2">Edit Bus</h2><br>
+       <h2 class="label-col2">Set Schadule</h2><br>
        <hr>
        <br>
        <form action="">
-      <label for="busid" class="label-col2">Registration Number</label>
+      <label for="busid" class="label-col2">Bus Registration Number</label>
       <input type="search" name="registration_number" id="regisration_number" value="<?= $busid ?>">
       <button>Search</button> <br><br><br><br>
     </form>
