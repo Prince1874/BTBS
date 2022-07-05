@@ -10,6 +10,14 @@
     margin-bottom: 20px;
   }
 
+  textarea select{
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
   .radio-span {
     border: 1px solid gray;
     width: 180px;
@@ -229,4 +237,3 @@
 .font {
   font-size: 10px;
 }
-

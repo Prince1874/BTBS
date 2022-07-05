@@ -24,6 +24,7 @@
 
 <div class="dropdown-menu">
     <ul>
+      <li><a href="Register.php">Register Staff</a></li>
       <li><a href="Newstaff.php">New Staff</a></li>
       <li><a href="Editstaff.php">Edit Staff</a></li>
       <li><a href="StaffList.php">Staff List</a></li>

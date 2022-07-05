@@ -24,6 +24,7 @@
 
 <div class="dropdown-menu">
     <ul>
+      <li><a href="Register.php">Register Staff</a></li>
       <li><a href="Newstaff.php">New Staff</a></li>
       <li><a href="Editstaff.php">Edit Staff</a></li>
       <li><a href="StaffList.php">Staff List</a></li>
@@ -50,7 +51,7 @@
 
 <div class="dropdown-menu">
 <ul>
-<li><a href="NewBus.php">New Bus</a></li>
+<li><a href="NewBus.php">Add New Bus</a></li>
 <li><a href="EditBus.php">Edit Bus</a></li>
 <li><a href="BusList.php">Bus List</a></li>
 <li>
