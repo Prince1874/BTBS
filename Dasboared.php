@@ -106,8 +106,24 @@ if (!isset($_SESSION['uname']))
 
   </div>
 
-  <div class="rightt-column">
-    <img src="BUS.jpeg" width="1294" height="566">
+  <div>
+
+    <?php
+    require_once 'DashboardCommon.php';
+    echo "Customers\n";
+    echo fetch_customer_count();
+    ?>
+  </div>
+
+  <div>
+
+    <?php
+    require_once 'DashboardCommon.php';
+    echo "Staffs\n";
+    echo fetch_staff_count();
+    ?>
+  </div>
+
 
   </div>
 

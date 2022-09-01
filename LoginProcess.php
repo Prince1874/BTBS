@@ -2,7 +2,6 @@
 
 $uname = $_POST['uname'];
 $password = $_POST['password'];
-$type = $_POST['type'];
 require 'Connection.php';
 
 $sql = "SELECT * FROM user WHERE uname = ? AND password = ?";

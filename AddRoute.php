@@ -100,7 +100,7 @@ if (!isset($_SESSION['uname']))
     <h2 class="label-col2">Add Route</h2><br>
     <hr>
     <br>
-    <form method="post" action="" class="column-flex">
+    <form method="post" action="AddRouteSubmit.php" class="column-flex">
       <div class="left-column">
         <label for="source" class="label-col1">Source</label>
         <input type="text" name="source" id="source">
@@ -117,50 +117,39 @@ if (!isset($_SESSION['uname']))
       <div class="right-column" id="station-details">
         <label for="routename" class="label-col1">Route Name</label>
         <input type="text" name="route_name" id="route_name">
-        <label for="stationid" class="label-col1">Station Name</label>
-        <textarea name="sations" id="stations" cols="30" rows="8"></textarea>
-      </div>
+        <label for="">Select Station</label>
+        <div>
+          <input type="checkbox" id="muzaffarpur" name="station[]" value="muzaffarpur">
+          <label for="muzaffarpur">Muzaffarpur</label>
+        </div>
+        <div>
+          <input type="checkbox" id="patna" name="station[]" value="patna">
+          <label for="patna">Patna</label>
+        </div>
+        <div>
+          <input type="checkbox" id="hajipur" name="station[]" value="hajipur">
+          <label for="hajipur">Hajipur</label>
+        </div>
+        <div>
+          <input type="checkbox" id="motihari" name="station[]" value="motihari">
+          <label for="motihari">Motihari</label>
+        </div>
+
     </form>
-  </div>
-  </div>
+    <script>
+      let Chackbox = document.querySelector('#other');
+      let text = document.querySelector('#otherValue');
+      text.style.visibility = 'hidden';
 
-  <div class="modal-container">
-    <div class="modal-content">
-      <div class="modal-header">
-
-      </div>
-      <div class="modal-body right-column">
-        <input list="lst_stations" type="text" name="station" id="station">
-        <datalist id="lst_stations">
-          <option value="Muzaffarpur">
-          <option value="Patna">
-          <option value="Hajipur">
-        </datalist>
-      </div>
-      <div class="modal-footer right-column">
-        <button type="button" onclick="addStation()">Add</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    function addStation() {
-      station = document.getElementById("station");
-      stations = document.getElementById("stations");
-      if (stations.innerHTML.length == 0)
-        stations.innerHTML = station.value;
-      else
-        stations.innerHTML = stations.innerHTML + "\r\n" + station.value;
-    }
-    // function appendRow() {
-    //   let tableRow = document.createElement("div");
-    //   document.getElementById("station-details").appendChild(tableRow);
-
-    //   let stationName = document.createElement("label");
-    //   tableRow.appendChild(stationName);
-    //   let inputStationName = document.createElement("input");
-    //   stationName.appendChild(inputStationName);
-    // }
-  </script>
+      Chacbox.addEventListener('change', () => {
+        if (Chacbox.checked) {
+          text.style.visibility = 'visible';
+          text.value = '';
+        } else {
+          text.style.visibility = 'hidden';
+        }
+      });
+    </script>
 </body>
 
 </html>

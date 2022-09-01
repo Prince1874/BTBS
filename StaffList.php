@@ -85,7 +85,7 @@
         $result = $con->query($sql);
         if ($result->num_rows > 0) {
             echo '<table class="list" border="1" width="100%">';
-            echo "<tr>";
+            echo "<tr bgcolor='lightgray'>";
             echo "    <th>Staff Id </th>\t";
             echo "    <th>First Name</th>";
             echo "    <th>Middle Name</th>";
